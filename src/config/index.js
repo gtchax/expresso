@@ -5,25 +5,23 @@ import prodConfig from './prod'
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 const env = process.env.NODE_ENV
 
-
 const baseConfig = {
-    secret: {}
+  secret: {}
 }
 
 let envConfig = {}
 
 switch (env) {
-    case 'development':
-    case 'dev':
-        envConfig = devConfig
-        break
-    case 'production':
-    case 'prod':
-        envConfig = prodConfig
-        break
+  case 'development':
+  case 'dev':
+    envConfig = devConfig
+    break
+  case 'production':
+  case 'prod':
+    envConfig = prodConfig
+    break
 
-    default:
-        envConfig = devConfig
+  default:
+    envConfig = devConfig
 }
 export default merge(baseConfig, envConfig)
-

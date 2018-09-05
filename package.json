@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "dotenv": "^6.0.0",
     "esm": "^3.0.82",
     "lodash.merge": "^4.6.1",
@@ -21,6 +22,7 @@
     "prettier": "^1.14.2"
   },
   "prettier": {
-    "semi": false
+    "semi": false,
+    "singleQuote": true
   }
 }
