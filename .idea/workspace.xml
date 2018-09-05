@@ -33,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -57,12 +57,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.model.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="user.model.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/resources/users/user.model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="3" selection-end-line="43" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +72,7 @@
       <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3334">
+            <state relative-caret-position="3319">
               <caret line="388" column="33" lean-forward="false" selection-start-line="388" selection-start-column="32" selection-end-line="388" selection-end-column="33" />
               <folding />
             </state>
@@ -84,6 +86,16 @@
               <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
+                <marker date="1536172381000" expanded="true" signature="404:593" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="418:535" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="627:850" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="641:783" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="884:1083" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="898:1016" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="1116:1408" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="1130:1341" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="1442:1660" ph="{...}" />
+                <marker date="1536172381000" expanded="true" signature="1456:1592" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,8 +118,8 @@
         <option value="$PROJECT_DIR$/src/database.js" />
         <option value="$PROJECT_DIR$/src/resources/users/user.controller.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/resources/users/user.router.js" />
+        <option value="$PROJECT_DIR$/src/router.js" />
         <option value="$PROJECT_DIR$/src/resources/users/user.model.js" />
       </list>
     </option>
@@ -247,12 +259,12 @@
       <workItem from="1536121606357" duration="218000" />
       <workItem from="1536121840294" duration="47000" />
       <workItem from="1536121906568" duration="149000" />
-      <workItem from="1536122349644" duration="11732000" />
+      <workItem from="1536122349644" duration="12321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12857000" />
+    <option name="totallyTimeSpent" value="13446000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -300,8 +312,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1536167601000" expanded="true" signature="452:587" ph="{&quot;eslint&quot;: &quot;^5.5.0&quot;...}" />
-            <marker date="1536167601000" expanded="true" signature="475:587" ph="{&quot;esm&quot;: &quot;^3.0.82&quot;...}" />
+            <marker date="1536173177000" expanded="true" signature="478:613" ph="{&quot;eslint&quot;: &quot;^5.5.0&quot;...}" />
+            <marker date="1536173177000" expanded="true" signature="501:613" ph="{&quot;esm&quot;: &quot;^3.0.82&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -431,8 +443,8 @@
         <state relative-caret-position="360">
           <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding>
-            <marker date="1536167601000" expanded="true" signature="452:587" ph="{&quot;eslint&quot;: &quot;^5.5.0&quot;...}" />
-            <marker date="1536167601000" expanded="true" signature="475:587" ph="{&quot;esm&quot;: &quot;^3.0.82&quot;...}" />
+            <marker date="1536173177000" expanded="true" signature="478:613" ph="{&quot;eslint&quot;: &quot;^5.5.0&quot;...}" />
+            <marker date="1536173177000" expanded="true" signature="501:613" ph="{&quot;esm&quot;: &quot;^3.0.82&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -451,6 +463,16 @@
           <caret line="55" column="57" lean-forward="false" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+            <marker date="1536172381000" expanded="true" signature="404:593" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="418:535" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="627:850" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="641:783" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="884:1083" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="898:1016" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="1116:1408" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="1130:1341" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="1442:1660" ph="{...}" />
+            <marker date="1536172381000" expanded="true" signature="1456:1592" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -465,6 +487,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3319">
+          <caret line="388" column="33" lean-forward="false" selection-start-line="388" selection-start-column="32" selection-end-line="388" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/users/user.router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -475,28 +505,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/users/user.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3334">
-          <caret line="388" column="33" lean-forward="false" selection-start-line="388" selection-start-column="32" selection-end-line="388" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/users/user.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="3" selection-end-line="43" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

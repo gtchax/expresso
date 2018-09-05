@@ -1,4 +1,6 @@
 import mongoose from 'mongoose'
+import bcrypt from 'bcryptjs'
+import pick from 'lodash.pick'
 
 const schema = {
     email: {
@@ -23,9 +25,18 @@ const schema = {
 
 const userSchema = new mongoose.Schema(schema, { timestamps: true})
 
-/*
-* Choose user data to return to client
-* */
+/* hash password before the save life cycle hook */
+userSchema.pre('save', async function(next) {
+    if(this.isModified('password')) {
+        const salt = await bcrypt.genSalt(10)
+        this.password = await bcrypt.hash(this.password, salt)
+        next()
+    } else {
+        next()
+    }
+})
+
+/* Choose user data to return to client */
 
 userSchema.methods.toJSON = function() {
     let userObject = this.toObject()
