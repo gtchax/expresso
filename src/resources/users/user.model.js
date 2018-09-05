@@ -21,7 +21,11 @@ const schema = {
         type: String,
         required: [true, 'Please enter your username'],
         trim: true
-    }
+    },
+    photoUrl: String,
+    bio: String,
+    url: String,
+    isAdmin: Boolean
 }
 
 const userSchema = new mongoose.Schema(schema, { timestamps: true})
