@@ -2,11 +2,17 @@ import express from 'express'
 import userController from './user.controller'
 export const userRouter = express.Router()
 
-userRouter.route('/')
+userRouter
+    .route('/')
     .get(userController.getUsers)
     .post(userController.createUser)
 
 
-userRouter.get('/:id', (req, res) => {
-    res.send(`User id is ${req.params.id}`)
-})
+userRouter
+    .route('/:id')
+    .get(userController.getProfile)
+    .put(userController.updateUser)
+    .delete(userController.deleteUser)
+    // .put()
+    // .delete()
+
