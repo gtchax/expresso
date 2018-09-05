@@ -6,6 +6,7 @@ import { userRouter } from './resources/users/user.router'
 
 
 const app = express()
+app.disable('x-powered-by')
 app.set('port', 4000)
 dbConnect()
 
