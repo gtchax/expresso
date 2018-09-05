@@ -23,4 +23,13 @@ const schema = {
 
 const userSchema = new mongoose.Schema(schema, { timestamps: true})
 
+/*
+* Choose user data to return to client
+* */
+
+userSchema.methods.toJSON = function() {
+    let userObject = this.toObject()
+    return pick(userObject, ['_id', 'email', 'username', 'photoURL', 'bio', 'url'])
+}
+
 export const User = mongoose.model('user', userSchema)

@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({"extended": true}))
 
 
 app.use('/', router)
+
 app.use('/users', userRouter)
 
 const server = app.listen(app.get('port'), () => {
