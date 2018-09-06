@@ -1,7 +1,7 @@
 import { Shot, validateShot } from './shot.model'
 import pick from 'lodash.pick'
 
-const shotController = {
+export const shotController = {
   async createShot(req, res) {
     try {
       const { error } = validateShot(req.body)
@@ -12,6 +12,8 @@ const shotController = {
         pick(req.body, ['title', 'description', 'draft', 'image', 'author'])
       )
       await shot.save()
+
+
       res.status(201).send(shot)
     } catch (err) {
       res.status(400).send(err)
@@ -44,4 +46,4 @@ const shotController = {
   }
 }
 
-export default shotController
+

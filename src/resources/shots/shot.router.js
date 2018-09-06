@@ -1,6 +1,6 @@
 import express from 'express'
 import { sanitizeBody } from 'express-validator/filter'
-import shotController from './shot.controller'
+import { shotController } from './shot.controller'
 import { catchErrors } from './../../middlewares'
 export const shotRouter = express.Router()
 

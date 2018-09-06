@@ -1,7 +1,7 @@
 import express from 'express'
-import userController from './user.controller'
+import { userController } from './user.controller'
 import { sanitizeBody } from 'express-validator/filter'
-import { catchErrors } from './../../middlewares'
+import { catchErrors, admin, authorization } from './../../middlewares'
 export const userRouter = express.Router()
 
 userRouter.route('/').get(catchErrors(userController.getUsers))
@@ -27,6 +27,6 @@ userRouter
     catchErrors(userController.updateUser)
   )
 
-  .delete(catchErrors(userController.deleteUser))
+  .delete(authorization, admin, catchErrors(userController.deleteUser))
 // .put()
 // .delete()

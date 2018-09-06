@@ -2,6 +2,8 @@ import mongoose from 'mongoose'
 import bcrypt from 'bcryptjs'
 import pick from 'lodash.pick'
 import Joi from 'Joi'
+import jwt from 'jsonwebtoken'
+import config from './../../config/dev'
 
 const schema = {
   email: {
@@ -19,7 +21,7 @@ const schema = {
   },
   username: {
     type: String,
-    required: [true, 'Please enter your username'],
+    // required: [true, 'Please enter your username'],
     trim: true
   },
   photoUrl: String,
@@ -53,6 +55,15 @@ userSchema.methods.toJSON = function() {
     'bio',
     'url'
   ])
+}
+
+/* User auth with JWT */
+userSchema.methods.generateAuthToken = function() {
+  const token = jwt.sign(
+      {_id: this._id, isAdmin: this.isAdmin},
+      config.secrets.JWT_TOKEN
+      )
+    return token
 }
 
 export const User = mongoose.model('user', userSchema)

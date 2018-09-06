@@ -23,8 +23,7 @@ if (app.get('env') === 'development') {
 
 app.use('/', router)
 
-app.use('/users', userRouter)
-app.use('/shots', shotRouter)
+
 app.use(notFound)
 app.use(logErrors)
 
