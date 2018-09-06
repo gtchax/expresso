@@ -1,11 +1,12 @@
 import express from 'express'
 import { sanitizeBody } from 'express-validator/filter'
 import shotController from './shot.controller'
+import { catchErrors } from './../../middlewares'
 export const shotRouter = express.Router()
 
 shotRouter
   .route('/')
-  .get(shotController.getShots)
+  .get(catchErrors(shotController.getShots))
   .post(
     [
       sanitizeBody('title')
@@ -23,7 +24,7 @@ shotRouter
 
 shotRouter
   .route('/:id')
-  .get(shotController.getShot)
+  .get(catchErrors(shotController.getShot))
   .put(
     [
       sanitizeBody('title')
@@ -35,8 +36,7 @@ shotRouter
       sanitizeBody('author')
         .trim()
         .escape()
-
     ],
-    shotController.createShot
+    catchErrors(shotController.createShot)
   )
   .delete(shotController.deleteShot)

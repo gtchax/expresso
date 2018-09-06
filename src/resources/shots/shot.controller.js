@@ -26,33 +26,21 @@ const shotController = {
     }
   },
   async getShot(req, res) {
-    try {
-      const shot = await Shot.findById(req.params.id)
-      if (!shot) {
-        return res.status(400).send('Shot not found')
-      }
-      res.status(200).send(shot)
-    } catch (err) {
-      res.status(400).send(err)
+    const shot = await Shot.findById(req.params.id)
+    if (!shot) {
+      return res.status(400).send('Shot not found')
     }
+    res.status(200).send(shot)
   },
   async updateShot(req, res) {
-    try {
-      const shot = await Shot.findByIdAndUpdate(req.params.id, req.body, {
-        new: true
-      })
-      res.status(200).send(shot)
-    } catch (err) {
-      res.status(400).send(err)
-    }
+    const shot = await Shot.findByIdAndUpdate(req.params.id, req.body, {
+      new: true
+    })
+    res.status(200).send(shot)
   },
   async deleteShot(req, res) {
-    try {
-      const shot = await Shot.deleteOne({ _id: req.params.id })
-      res.status(200).send(shot)
-    } catch (err) {
-      res.status(400).send(err)
-    }
+    const shot = await Shot.deleteOne({ _id: req.params.id })
+    res.status(200).send(shot)
   }
 }
 
