@@ -17,7 +17,8 @@
     "joi": "^13.6.0",
     "lodash.merge": "^4.6.1",
     "lodash.pick": "^4.4.0",
-    "mongoose": "^5.2.13"
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "eslint": "^5.5.0",

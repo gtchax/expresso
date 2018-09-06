@@ -8,8 +8,12 @@ router.get('/', (req, res) =>
 
 // router.get('/signin', userController.createUser())
 
-router.post('/signup', [
+router.post(
+  '/signup',
+  [
     sanitizeBody('email')
-        .trim()
-        .escape()
-], userController.createUser)
+      .trim()
+      .escape()
+  ],
+  userController.createUser
+)
